@@ -18,6 +18,13 @@
 		F20D29AC17329C650041E689 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20D29AB17329C650041E689 /* Default-568h@2x.png */; };
 		F20D29AF17329C650041E689 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D29AD17329C650041E689 /* MainStoryboard.storyboard */; };
 		F20D29B217329C650041E689 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D29B117329C650041E689 /* ViewController.m */; };
+		F20D29BA17329CE00041E689 /* PuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D29B917329CE00041E689 /* PuzzleBoard.m */; };
+		F20D29BE1736BA3D0041E689 /* MCSteamView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D29BC1736AB4D0041E689 /* MCSteamView.m */; };
+		F20D29C11736BE160041E689 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20D29C01736BE160041E689 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F28FA9ED1753A53A00A045FC /* steam.png in Resources */ = {isa = PBXBuildFile; fileRef = F28FA9EC1753A53A00A045FC /* steam.png */; };
+		F28FA9F217590BE900A045FC /* PuzzleBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F28FA9F117590BE900A045FC /* PuzzleBoardView.m */; };
+		F28FA9F61760DE8800A045FC /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F28FA9F51760DE8800A045FC /* UIImage+Resize.m */; };
+		F28FA9FA176203FF00A045FC /* bak.png in Resources */ = {isa = PBXBuildFile; fileRef = F28FA9F9176203FF00A045FC /* bak.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,17 @@
 		F20D29AE17329C650041E689 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F20D29B017329C650041E689 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F20D29B117329C650041E689 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F20D29B817329CDF0041E689 /* PuzzleBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleBoard.h; sourceTree = "<group>"; };
+		F20D29B917329CE00041E689 /* PuzzleBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleBoard.m; sourceTree = "<group>"; };
+		F20D29BB1736AB4D0041E689 /* MCSteamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSteamView.h; sourceTree = "<group>"; };
+		F20D29BC1736AB4D0041E689 /* MCSteamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSteamView.m; sourceTree = "<group>"; };
+		F20D29C01736BE160041E689 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F28FA9EC1753A53A00A045FC /* steam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steam.png; sourceTree = "<group>"; };
+		F28FA9F017590BE900A045FC /* PuzzleBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleBoardView.h; sourceTree = "<group>"; };
+		F28FA9F117590BE900A045FC /* PuzzleBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleBoardView.m; sourceTree = "<group>"; };
+		F28FA9F41760DE8800A045FC /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		F28FA9F51760DE8800A045FC /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		F28FA9F9176203FF00A045FC /* bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bak.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20D29C11736BE160041E689 /* QuartzCore.framework in Frameworks */,
 				F20D299617329C650041E689 /* UIKit.framework in Frameworks */,
 				F20D299817329C650041E689 /* Foundation.framework in Frameworks */,
 				F20D299A17329C650041E689 /* CoreGraphics.framework in Frameworks */,
@@ -57,10 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				F20D299B17329C650041E689 /* Puzzle */,
-				F20D299417329C650041E689 /* Frameworks */,
 				F20D299317329C650041E689 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		F20D299317329C650041E689 /* Products */ = {
 			isa = PBXGroup;
@@ -73,22 +92,32 @@
 		F20D299417329C650041E689 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F20D29C01736BE160041E689 /* QuartzCore.framework */,
 				F20D299517329C650041E689 /* UIKit.framework */,
 				F20D299717329C650041E689 /* Foundation.framework */,
 				F20D299917329C650041E689 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F20D299B17329C650041E689 /* Puzzle */ = {
 			isa = PBXGroup;
 			children = (
+				F28FA9F31760DE2100A045FC /* Common */,
 				F20D29A417329C650041E689 /* AppDelegate.h */,
 				F20D29A517329C650041E689 /* AppDelegate.m */,
 				F20D29AD17329C650041E689 /* MainStoryboard.storyboard */,
 				F20D29B017329C650041E689 /* ViewController.h */,
 				F20D29B117329C650041E689 /* ViewController.m */,
+				F20D29B817329CDF0041E689 /* PuzzleBoard.h */,
+				F20D29B917329CE00041E689 /* PuzzleBoard.m */,
+				F20D29BB1736AB4D0041E689 /* MCSteamView.h */,
+				F20D29BC1736AB4D0041E689 /* MCSteamView.m */,
 				F20D299C17329C650041E689 /* Supporting Files */,
+				F20D299417329C650041E689 /* Frameworks */,
+				F28FA9F017590BE900A045FC /* PuzzleBoardView.h */,
+				F28FA9F117590BE900A045FC /* PuzzleBoardView.m */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -96,6 +125,8 @@
 		F20D299C17329C650041E689 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F28FA9EC1753A53A00A045FC /* steam.png */,
+				F28FA9F9176203FF00A045FC /* bak.png */,
 				F20D299D17329C650041E689 /* Puzzle-Info.plist */,
 				F20D299E17329C650041E689 /* InfoPlist.strings */,
 				F20D29A117329C650041E689 /* main.m */,
@@ -105,6 +136,15 @@
 				F20D29AB17329C650041E689 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F28FA9F31760DE2100A045FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F28FA9F41760DE8800A045FC /* UIImage+Resize.h */,
+				F28FA9F51760DE8800A045FC /* UIImage+Resize.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +203,8 @@
 				F20D29AA17329C650041E689 /* Default@2x.png in Resources */,
 				F20D29AC17329C650041E689 /* Default-568h@2x.png in Resources */,
 				F20D29AF17329C650041E689 /* MainStoryboard.storyboard in Resources */,
+				F28FA9ED1753A53A00A045FC /* steam.png in Resources */,
+				F28FA9FA176203FF00A045FC /* bak.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +218,10 @@
 				F20D29A217329C650041E689 /* main.m in Sources */,
 				F20D29A617329C650041E689 /* AppDelegate.m in Sources */,
 				F20D29B217329C650041E689 /* ViewController.m in Sources */,
+				F20D29BA17329CE00041E689 /* PuzzleBoard.m in Sources */,
+				F20D29BE1736BA3D0041E689 /* MCSteamView.m in Sources */,
+				F28FA9F217590BE900A045FC /* PuzzleBoardView.m in Sources */,
+				F28FA9F61760DE8800A045FC /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +259,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -229,6 +275,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -250,6 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -264,6 +312,7 @@
 				GCC_PREFIX_HEADER = "Puzzle/Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -275,6 +324,7 @@
 				GCC_PREFIX_HEADER = "Puzzle/Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "Puzzle/Puzzle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +348,7 @@
 				F20D29B717329C650041E689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
